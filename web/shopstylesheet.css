@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+.p, p, a, th, tr, form {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+.h, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lobster', cursive;
+}
+.largeP{
+	font-size: 1.3em;
+}
+body{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.button {
+	width: 75px;
+	height: 15px;
+	background-color: #5277A4; 
+	padding: 7px;
+	margin-top: 2%;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+}
+.button:hover{
+	border: 3px solid #75A1D5;
+	background-color: #75A1D5;	
+}
+.link {
+	padding: 5px;
+	text-align: center;
+	background-color: #8FBCAF;
+	color: white;
+	border-radius: 5px;
+}
+.link:hover{
+	border: 3px solid #1EB78B;
+	background-color: #1EB78B;
+}
+.delete {
+	color: red;
+	text-decoration: underline;
+}
+.delete:hover{
+	color: #A41A66;
+}
+.submit{
+	width: 150px;
+	height: 35px;
+	background-color: #85C3DD;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	font-size: 1.1em;
+	margin: 15px;
+}
+.submit:hover{
+	border: 3px solid #528CA4;
+	background-color: #528CA4;
+}
+a {
+	text-decoration: none;
+}
+.border{
+	margin-left: 20px;
+	padding: 5px;
+	border: 2px solid #1EB78B;
+	width: 20%;
+	text-align: center;
+}
+#logo {
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+	text-align: center;
+	padding: 0;
+}
+
+#shopcart {
+	display: flex;
+	flex-direction: column;
+	margin: 1%;
+}
+.cart {
+	margin-right: 5%;
+}
+.end {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.box {	
+
+
+} 
+.group {
+
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 2%;
+}
