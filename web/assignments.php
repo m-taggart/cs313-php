@@ -23,7 +23,7 @@
 	    <main>
             <h1> Assignments </h1>
             <hr>
-            <h2 id="special"><a href="https://git.heroku.com/secure-wildwood-43146.git/browseItems.php">Week 3 PHP Shopping Cart</a></h2>
+            <h2 id="special"><a href="https://secure-wildwood-43146.herokuapp.com/browseItems.php">Week 3 PHP Shopping Cart</a></h2>
             <hr>
         </main>
         
