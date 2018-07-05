@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+   <head>        
+        <meta charset = "utf-8">
+        <title>Movie Search - Week 11 Team </title>
+        
+<script >
+
+function myFunction(object) {
+  var btn = document.createElement("BUTTON");
+  btn.setAttribute('id', 'button1')
+  btn.onclick = function(){ console.log('id is: ', object);}
+  var t = document.createTextNode("View Details");
+  btn.appendChild(t);
+  document.body.appendChild(btn);
+}
+
+function get_movie() {
+
+var movie = document.getElementById('movie').value;
+console.log("movie is: ", movie);
+searchString = 'https://www.omdbapi.com/?apikey=7a31596a&t=' + movie;  
+
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function () {
+   if (this.readyState == 4 && this.status == 200) {
+       var response = this.responseText;
+       console.log('response is: ' + response);
+ 	   var movieObj = JSON.parse(response);
+       var object = movieObj.imdbID;
+       
+       document.getElementById('details').innerHTML = response;
+       myFunction(object);
+   }
+}
+
+
+xhr.open('GET', searchString, true);
+//xhr.setRequestHeader("content-type", "application/json");
+xhr.send();
+}
+</script>
+   </head>
+
+
+   <body>
+    <h2>Search for a movie below: </h2>
+    <input type='text' id='movie'>   <input type='button' onclick="get_movie()" value='Search'>  
+    <div id='details'>
+    </div>                  
+
+</body>
+</html>
+
+
+
